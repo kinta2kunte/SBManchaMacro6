@@ -1,0 +1,62 @@
+追加は何も選択してない場合一番下に追加、何か選択された状態で追加押すと選択された下に追加とかってできる？
+後々実装すると思うけど、横幅はいいとして登録されたキーやパワーを全表示できるように縦幅可変じっそうよろしくおねがいします
+
+終了時に選択マクロを保持する機能
+自己buff, pot buffを開始直後に行うオプションも付けた方が良いね
+
+2021/8/17
+・既存の登録したマクロを複製できるようにしてほしいいいい
+・複製選択時名前変えれるようダイアログ等もよろぴくです
+＞＞元々各設定画面でで設定ロード機能つけようかと考えていた
+
+・やっぱり自己buff 設定２個ほしいかも
+　９００secのbuffもあれば１２０secのbuffもあったりするから
+
+＞＞設定項目多くなったからDB使用の可否も含め考えます
+
+プロセス制御
+
+新規作成見直し
+
+2021/8/28
+
+基本キー追加ボタンが
+ウインドウサイズかえても追従しない
+起動時格納トレイに収納オプション
+
+2021/9/2
+
+window位置はメイン画面だけ終了位置を記憶して、後はそのメイン画面を中心にフォーム表示するようにする
+＞やはり通常攻撃のほかにDOT等効果時間やリキャストながいパワー用の定時攻撃設定も欲しい
+これってもう1個定時buff設定が欲しいって事かな？
+非アクティブなじょうたいからアクティブにしたときぐるぐるまわって落ちる＞調査
+window handleは定期的に取り直し＞無くなっていたらマクロ自動停止
+
+
+2021/09/13 21:58:17: 場所 System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+場所 System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
+場所 System.Windows.Forms.Control.Invoke(Delegate method)
+場所 SBManchaMacro.Form1.dispListDelegateWorker()
+場所 SBManchaMacro.Form1.StartMacro()
+
+やっぱり設定した定時やらbuffの編集で削除するとき１個ずれてけされる
+選んだ一つ上が消える
+
+あと削除は選択してdeleteボタンでも消せるようショー化っとキーせっていできる？
+
+
+
+ally openでも
+自分のギルドに飛べるようにする方法わかった
+TOLのCondemn listでAｌｌｙにチェック
+ＩＣで自分以外の自国キャラを選んでのタグをCondemn listに放り込む
+Nationを選ぶ
+追加されたtagにチェックする
+本国はもうその設定にした
+いじらなくてokpk
+俺町も
+常にally openにしようかと思う
+本国も常にally openのままでいいんじゃないかね？
+この状況下だと週末baneはさけれんだｓろ
+
+Woe/ Ardent Legion/KOK/ Attrition/Ghostsのtagはワラントでとっておいたほうがいいね

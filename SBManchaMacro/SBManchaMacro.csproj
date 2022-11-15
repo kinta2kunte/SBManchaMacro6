@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE7B4657-33D1-46EE-A830-3E9A5A84A107}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SBManchaMacro</RootNamespace>
+    <AssemblyName>SBManchaMacro</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>warlock.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasicSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicSettings.Designer.cs">
+      <DependentUpon>BasicSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data.cs" />
+    <Compile Include="edtInitBuff3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edtInitBuff3.Designer.cs">
+      <DependentUpon>edtInitBuff3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edtInitBuff2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edtInitBuff2.Designer.cs">
+      <DependentUpon>edtInitBuff2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edtInitBuff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edtInitBuff.Designer.cs">
+      <DependentUpon>edtInitBuff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edtMainloop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edtMainloop.Designer.cs">
+      <DependentUpon>edtMainloop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edtPotBuff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edtPotBuff.Designer.cs">
+      <DependentUpon>edtPotBuff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iBuffEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iBuffEdit.Designer.cs">
+      <DependentUpon>iBuffEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="keySettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="keySettings.Designer.cs">
+      <DependentUpon>keySettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="keyEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="keyEdit.Designer.cs">
+      <DependentUpon>keyEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="macroName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="macroName.Designer.cs">
+      <DependentUpon>macroName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainEdit.Designer.cs">
+      <DependentUpon>mainEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="potEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="potEdit.Designer.cs">
+      <DependentUpon>potEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="selectMacro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selectMacro.Designer.cs">
+      <DependentUpon>selectMacro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BasicSettings.resx">
+      <DependentUpon>BasicSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edtInitBuff3.resx">
+      <DependentUpon>edtInitBuff3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edtInitBuff2.resx">
+      <DependentUpon>edtInitBuff2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edtInitBuff.resx">
+      <DependentUpon>edtInitBuff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edtMainloop.resx">
+      <DependentUpon>edtMainloop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edtPotBuff.resx">
+      <DependentUpon>edtPotBuff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iBuffEdit.resx">
+      <DependentUpon>iBuffEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="keySettings.resx">
+      <DependentUpon>keySettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="keyEdit.resx">
+      <DependentUpon>keyEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="macroName.resx">
+      <DependentUpon>macroName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainEdit.resx">
+      <DependentUpon>mainEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="potEdit.resx">
+      <DependentUpon>potEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="selectMacro.resx">
+      <DependentUpon>selectMacro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pot2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\psychic healing.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\psychic shout.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blessing of the grove .PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon1.ico" />
+    <None Include="Resources\wing of seraphim.PNG" />
+    <Content Include="warlock.ico" />
+    <None Include="Resources\amazons endurance.PNG" />
+    <None Include="Resources\basicSetting.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
